@@ -171,7 +171,7 @@ class GroupController
             exitOutput($this->returnJson);
         }
         //排序json字符串
-        $orderList = quickInput('orderList');
+        $orderList = quickInput('orderNumber');
         //判断排序格式是否合法
         if (!preg_match('/^[0-9]{1,11}$/', $projectID)) {
             $this->returnJson['statusCode'] = '150007';
